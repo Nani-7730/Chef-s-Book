@@ -1,0 +1,267 @@
+body { 
+	font-family: Arial, sans-serif;/*body*/
+	margin: 0;
+	padding: 0;
+	background: whitesmoke;
+	height: 100%;
+}
+
+header {
+	padding: 20px;
+	position: fixed;/*header*/
+	width: 100%;
+	margin-top: -170px;
+	box-sizing: border-box;	
+	background-color: whitesmoke;
+	z-index: 1;
+}
+
+.logo{
+	width: 200px; 
+	height: 180px;
+	margin-top: -50px; 
+	margin-left: 20PX;
+}
+
+#q1{
+	color: orangered;
+	font-family: 'Times New Roman', Times, serif;/*quote in index*/
+	font-style: italic;
+}
+
+.box{
+	display: inline-block;
+	background-color: orangered;/*check out my recipes in index*/
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.div1{
+	display: flex;
+	justify-content: center;/*quote division in index*/
+	align-items: center;
+}
+
+.div2{
+	margin-right: 100px;/*class related to logos in the body of the index*/
+}
+
+.div2:last-child{
+	margin-right: 0px;
+}
+
+.box1:hover{
+	color: black;/*logo hovering color change*/
+}
+
+.container {
+    display: flex;
+    grid-template-rows: 1fr auto; /* first division in index set the container to have 1 row that takes up all available space, and another row for the footer */
+    min-height: 55vh;
+	font-family: 'Times New Roman', Times, sans-serif;
+	font-style: italic;
+	justify-content: center;
+	align-items: center;
+	border-color: orangered;margin-bottom: 20px;
+}
+
+.container1{
+	display: flex;
+	justify-content: center;/*index page quotation*/
+	align-items: center;
+}
+
+
+
+#about{
+	display: flex;
+	font-family: 'Times New Roman', Times, serif;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  #about1{
+	width: 300px;
+	height: 200px;
+	display: flex;
+	font-family: 'Times New Roman', Times, serif;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  #container1{
+	display: flex;
+	margin-top: 100px;
+	margin-bottom: -100px;
+  }
+
+nav {
+	margin-top: -120PX;
+	margin-right: 20px;
+	padding: 10px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: right;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+	border-radius: 20px;
+}
+
+nav ul li a {
+	color: black;
+	text-decoration: none;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: larger;
+}
+
+nav ul li a:hover {
+	color: whitesmoke;
+	background-color: #333;
+}
+
+main {
+	margin: 170px 20px 20px 20px;	
+}
+
+section {
+	border: 1px fixed whitesmoke;/*recepie pages settings*/
+	padding: 20px;
+	margin: -20px;
+	display: inline-flex;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style-type: none;
+	margin-left: 20px;
+}
+
+ol {
+	list-style-type: none;
+	margin-left: 20px;
+}
+
+a{
+	color: black;
+}
+
+a:hover{
+	color: brown;
+	text-decoration: underline;
+	
+}
+
+.sec{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sec2{
+	margin: auto;
+    text-align: center;
+}
+
+.fade-image {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+	border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 5);
+  }
+  
+.fade-image:hover {
+    opacity: 0.5;
+}
+
+.grid1 {
+	position: relative;
+}
+  
+.grid1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    z-index: 1;
+}
+  
+.grid1 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+figcaption{
+	font-weight: bold;
+	font-family: Georgia, 'Times New Roman', Times, serif	;
+
+}
+
+.zxy{
+	font-family: Georgia, 'Times New Roman', Times, serif	; /*recipe page heading font class*/
+
+}
+
+.image-container {
+	position: relative;
+	display: inline-block;
+  }
+  
+.banner {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	padding: 10px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+	width: 1000px;
+	overflow: auto;
+	transition-delay: 0.5s; /* Add the transition-delay property */
+}
+  
+  .image-container:hover .banner {
+	visibility: visible;
+	opacity: 1;
+  }
+
+  @media only screen and (max-width: 768px) {
+	.banner {
+	  top: 30%;
+	  width: 150px;
+	  padding: 5px;
+	  font-size: 0.8rem;
+	}
+  }
+  
+footer {
+    height: 50px;
+}
+
